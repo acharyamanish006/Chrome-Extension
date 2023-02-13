@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "background changer",
+    "description": "",
+    "version": "1",
+    "icons":{
+        "16":"./img/bg.png",
+        "48":"./img/bg.png",
+        "128":"./img/bg.png"
+    },
+    "page_action": {
+        "default_icon":{
+            "16":"./img/bg.png",
+            "48":"./img/bg.png",
+            "128":"./img/bg.png"
+        }
+    },
+    "content_scripts": [{
+        "matches":["<all_urls>"],
+        "css" : ["main.css"]
+    }]
+}
